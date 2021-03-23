@@ -40,20 +40,20 @@
     "vlucas/phpdotenv": "^2.0"
   },
   "extra": {
-    "wordpress-install-dir": "public/wp",
-    "wordpress-content-dir": "public/content",
+    "wordpress-install-dir": "public/",
+    "wordpress-content-dir": "public/wp-content",
     "wpstarter": {
       "env-example": true,
       "prevent-overwrite": false
     },
     "installer-paths": {
-      "public/content/plugins/{$name}": [
+      "public/wp-content/plugins/{$name}": [
         "type:wordpress-plugin"
       ],
-      "public/content/mu-plugins/{$name}": [
+      "public/wp-content/mu-plugins/{$name}": [
         "type:wordpress-muplugin"
       ],
-      "public/content/themes/{$name}": [
+      "public/wp-content/themes/{$name}": [
         "type:wordpress-theme"
       ]
     }
