@@ -1,0 +1,61 @@
+{
+  "name": "forumone/wordpress-default",
+  "type": "library",
+  "keywords": [
+    "composer",
+    "wordpress",
+    "wp",
+    "wp-config",
+    "config",
+    "env"
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "composer",
+      "url": "https://satispress.forumone.dev/satispress/"
+    }
+  ],
+  "description": "Forum One default installation for starting Drupal 8 builds.",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "wpackagist-plugin/timber-library": "~1.9.0",
+    "forumone/advanced-custom-fields-pro": "*",
+    "wpackagist-plugin/kirki": "^3.1",
+    "wpackagist-plugin/disable-gutenberg-blocks": "1.0.8",
+    "wpackagist-plugin/wp-cfm": "*",
+    "wpackagist-plugin/wp-redis": "*",
+    "wpackagist-plugin/google-site-kit": "*",
+    "wpackagist-plugin/wordpress-seo": "*",
+    "wpackagist-plugin/disable-comments": "*",
+    "wpackagist-plugin/regenerate-thumbnails": "*",
+    "wpackagist-plugin/acf-content-analysis-for-yoast-seo": "*",
+    "forumone/gravityforms": "*",
+    "forumone/facetwp": "*",
+    "forumone/wp-all-import-pro": "^4.6",
+    "wpackagist-plugin/safe-redirect-manager": "^1.10",
+    "vlucas/phpdotenv": "^2.0"
+  },
+  "extra": {
+    "wordpress-install-dir": "public/wp",
+    "wordpress-content-dir": "public/content",
+    "wpstarter": {
+      "env-example": true,
+      "prevent-overwrite": false
+    },
+    "installer-paths": {
+      "public/content/plugins/{$name}": [
+        "type:wordpress-plugin"
+      ],
+      "public/content/mu-plugins/{$name}": [
+        "type:wordpress-muplugin"
+      ],
+      "public/content/themes/{$name}": [
+        "type:wordpress-theme"
+      ]
+    }
+  }
+}

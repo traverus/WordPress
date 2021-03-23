@@ -1,0 +1,14 @@
+{
+  "packages": {
+    "forumone/wordpress": {
+      "1.0" : {
+        "name": "forumone/wordpress",
+        "version": "1.0",
+        "dist": {
+          "url": "https://github.com/traverus/WordPress/archive/refs/heads/master.zip",
+          "type": "zip"
+        }
+      }
+    }
+  }
+}
