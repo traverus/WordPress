@@ -1,0 +1,7 @@
+# WP Starter
+### WP Starter
+.env
+web/wp/
+web/wp-content/
+
+!web/wp-content/themes/gesso
