@@ -1,6 +1,6 @@
 {
   "packages": {
-    "forumone/wordpress": {
+    "forumone/wordpress-default": {
       "1.0" : {
         "name": "forumone/wordpress",
         "version": "1.0",
