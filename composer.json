@@ -22,6 +22,8 @@
   "description": "Forum One default installation for starting Drupal 8 builds.",
   "license": "GPL-2.0-or-later",
   "require": {
+    "johnpbloch/wordpress-core": "*",
+    "johnpbloch/wordpress-core-installer": "^2.0",
     "wpackagist-plugin/timber-library": "~1.9.0",
     "forumone/advanced-custom-fields-pro": "*",
     "wpackagist-plugin/kirki": "^3.1",
@@ -40,20 +42,20 @@
     "vlucas/phpdotenv": "^2.0"
   },
   "extra": {
-    "wordpress-install-dir": "public/",
-    "wordpress-content-dir": "public/wp-content",
+    "wordpress-install-dir": "web/",
+    "wordpress-content-dir": "web/wp-content",
     "wpstarter": {
       "env-example": true,
       "prevent-overwrite": false
     },
     "installer-paths": {
-      "public/wp-content/plugins/{$name}": [
+      "web/wp-content/plugins/{$name}": [
         "type:wordpress-plugin"
       ],
-      "public/wp-content/mu-plugins/{$name}": [
+      "web/wp-content/mu-plugins/{$name}": [
         "type:wordpress-muplugin"
       ],
-      "public/wp-content/themes/{$name}": [
+      "web/wp-content/themes/{$name}": [
         "type:wordpress-theme"
       ]
     }

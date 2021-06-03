@@ -1,0 +1,57 @@
+### WP Starter
+.env
+.user.ini
+uploads.ini
+auth.json
+!web/wp-config.php
+!web/wp-config.pantheon.php
+
+# Composer generated files
+web/wp
+web/wp-content/vendor
+web/wp-includes
+web/wp-admin
+web/*.php
+web/*.txt
+web/index.php
+web/readme.html
+web/composer.json
+web/wp-content/index.php
+
+# Ignore themes/plugins with exceptions for custom code
+!web/wp-content/config/
+web/wp-content/config/*
+!web/wp-content/mu-plugins/
+web/wp-content/mu-plugins/*
+!web/wp-content/plugins/
+web/wp-content/plugins/*
+!web/wp-content/themes/
+web/wp-content/themes/*
+!web/wp-content/mu-plugins/f1-acf-local-json-dir.php
+!web/wp-content/mu-plugins/wp-cfm-multi-env.php
+!web/wp-content/mu-plugins/f1-custom-core-blocks.php
+
+# Ignore Worfence logs
+web/wp-content/wflogs/
+
+# Ignore file uploads
+web/wp-content/uploads/*
+
+# Do not ignore theme.
+!web/wp-content/themes/gesso
+
+# Do not ignore WP-CFM files.
+!web/wp-content/config/.gitkeep
+!web/wp-content/config/dev/
+!web/wp-content/config/stage/
+!web/wp-content/config/prod/
+
+# Don't ignore plugins that can't be bundled with composer
+#!web/wp-content/plugins/<plugin-name>/
+!web/wp-content/plugins/google-site-kit-dev-settings/
+!web/wp-content/plugins/wpai-acf-add-on/
+
+public
+
+.idea
+vendor

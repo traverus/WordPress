@@ -1,0 +1,8 @@
+{
+    "http-basic": {
+        "satispress.forumone.dev": {
+            "username": "USERNAME",
+            "password": "PASSWORD"
+        }
+    }
+}
